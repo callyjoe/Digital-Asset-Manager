@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Asset Manager</title>
+    <link rel="stylesheet" href="DAM.css">
+</head>
+<body>
+    <div class="dam-container">
+        <!-- Top Control Bar -->
+        <header class="controls-header">
+            <div class="logo-area">
+                <h1>Asset Hub</h1>
+            </div>
+            
+            <!-- Upload Simulation -->
+            <div class="upload-section">
+                <input type="text" id="new-tag-input" placeholder="e.g., Web, Promo...">
+                <button id="btn-upload">Simulate Upload</button>
+            </div>
+        </header>
+
+        <!-- Category Filters -->
+        <nav class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All Assets</button>
+            <button class="filter-btn" data-filter="apparel">Apparel</button>
+            <button class="filter-btn" data-filter="branding">Branding & Typography</button>
+            <button class="filter-btn" data-filter="web">Web Elements</button>
+        </nav>
+
+        <!-- The Asset Grid -->
+        <main class="asset-grid" id="asset-grid">
+            
+            <!-- Asset Card 1: Apparel (Shirt) -->
+            <div class="asset-card" data-category="apparel">
+                <div class="image-container">
+                    
+                    <img src="Whiteneck.jfif" alt="White Round Neck Shirt Mockup" class="asset-img">
+                </div>
+                <div class="asset-details">
+                    <span class="tag">Apparel</span>
+                    <h3>White Round Neck</h3>
+                </div>
+            </div>
+
+            <!-- Asset Card 2: Apparel (Jeans) -->
+            <div class="asset-card" data-category="apparel">
+                <div class="image-container">
+                    <!-- ADD YOUR JEANS IMAGE SRC HERE inside the quotes -->
+                    <img src="jeans.jfif" alt="Blue Jeans Asset" class="asset-img">
+                </div>
+                <div class="asset-details">
+                    <span class="tag">Apparel</span>
+                    <h3>Classic Blue Jeans</h3>
+                </div>
+            </div>
+
+            <!-- Asset Card 3: Branding / Typography -->
+            <div class="asset-card" data-category="branding">
+                <div class="image-container">
+                    <!-- ADD YOUR TYPOGRAPHY/AD IMAGE SRC HERE inside the quotes -->
+                    <img src="typography.jfif" alt="Bold Sans-Serif Typography Ad" class="asset-img">
+                </div>
+                <div class="asset-details">
+                    <span class="tag">Branding</span>
+                    <h3>Ad Campaign Typography</h3>
+                </div>
+            </div>
+
+            <!-- Asset Card 4: Web Elements -->
+            <div class="asset-card" data-category="web">
+                <div class="image-container">
+                    <!-- ADD A WEBSITE SCREENSHOT SRC HERE inside the quotes -->
+                    <img src="gallery.jfif" alt="Landing Page Layout" class="asset-img">
+                </div>
+                <div class="asset-details">
+                    <span class="tag">Web</span>
+                    <h3>Homepage Hero Section</h3>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <script src="DAM.js"></script>
+</body>
+</html>
